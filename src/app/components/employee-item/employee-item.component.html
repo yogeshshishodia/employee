@@ -1,0 +1,6 @@
+<div *ngIf = "employee" class = "employee" [ngClass] = "{project : employee.project}" (dblclick)="projectToggle(employee)">
+    <h3>
+        {{employee.name}}
+    </h3>
+    <p>{{employee.profession}}</p>
+</div>

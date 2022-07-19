@@ -1,0 +1,16 @@
+<form *ngIf="showAddEmployee" class="form-control add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="name">Name : </label>
+        <input type="text" [(ngModel)]="name" name="name" id="name" placeholder="Enter Employee Name"/>
+    </div>
+    <div class="form-control">
+        <label for="profession">Profession : </label>
+        <input type="text" [(ngModel)]="profession" name="profession" id="profession" placeholder="Enter Profession"/>
+    </div>
+    <div class="form-control form-control-check">
+        <label for="project">Project : </label>
+        <input type="checkbox" name="project" [(ngModel)]="project" id="project"/>
+    </div>
+    {{name}}
+    <input type="submit" value="Save Employee" class="btn-block">
+</form>

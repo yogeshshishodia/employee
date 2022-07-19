@@ -1,0 +1,9 @@
+<header>
+    <h1>Employees
+    <app-button
+    *ngIf = "hasRoute('/')"
+    color="{{showAddEmployee ? 'red':'green'}}"
+    text = "{{showAddEmployee ? 'Close' : 'Add'}}" 
+    (btnClick)="toggleEmployee()"></app-button>
+</h1>
+</header>
